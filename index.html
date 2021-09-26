@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item header__nav-item_current">
+                        <a href="#" class="header__nav-link">Главная</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">Товары</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="#" class="header__logo"></a>
+
+            <div class="header__phones">
+                <ul class="header__phones-list">
+                    <li class="header__phones-item">
+                        <a href="#" class="header__phones-link">+7 727 368 83 56</a>
+                    </li>
+                    <li class="header__phones-item">
+                        <a href="#" class="header__phones-link">+7 771 964 36 50</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="header__hero">
+            <h1 class="header__hero-title">
+                Строительство бассейнов
+            </h1>
+            <p class="header__hero-subtitle">
+                <strong>Полный спект работ:</strong> от проектирования и сдачи “под ключ” до обслуживания 
+                или реконструкции вашего бассейна, а также большой выбор товаров
+            </p>
+            <button class="button-submit header__hero-button">Оставить заявку</button>
+        </div>
+    </header>
+
+    <section class="works">
+        <div class="works__container">
+            <h2 class="works__title">
+                Наши работы
+            </h2>
+            <div class="works__slider">
+                <div class="works__slider-pic">
+                    <img src="img/works-1.png" alt="first image" class="works__slider-img">
+                </div>
+                <div class="works__slider-pic">
+                    <img src="img/works-2.png" alt="second image" class="works__slider-img">
+                </div>
+                <div class="works__slider-pic">
+                    <img src="img/works-3.png" alt="third image" class="works__slider-img">
+                </div>
+            </div>
+            <div class="works__buttons">
+                <button class="works__buttons-button button-slider button-slider_left"></button>
+                <button class="works__buttons-button button-slider button-slider_right"></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="price">
+        <div class="price__container">
+            <h2 class="price__title">
+                Сколько будет стоить бассейн?
+            </h2>
+            <p class="price__paragraph">
+                Ответьте на несколько вопросов и наши специалисты отправят вам смету в течении <strong>1 рабочего дня</strong>
+            </p>
+
+            <div class="price__wrapper">
+                <form action="submit" class="price__form">
+                    
+                    <div class="price__form-item">
+                        <label for="select-material" class="price__form-label">Отделка чаши:</label>
+                        <div class="price__form-select-wrapper select-wrapper">
+                            <select name="material" id="select-material" class="price__form-select select">
+                                <option value="pol">Полипропилен</option>
+                                <option value="lor">Lorem</option>
+                                <option value="ips">Ipsum</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="price__form-item">
+                        <label for="select-heat" class="price__form-label">Нагрев воды:</label>
+                        <div class="price__form-select-wrapper select-wrapper">
+                            <select name="heat" id="select-heat" class="price__form-select select">
+                                <option value="yes">Нет</option>
+                                <option value="no">Да</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="price__form-item">
+                        <label for="input-size" class="price__form-label">Размер <br> бассейна:</label>
+                        <div class="price__form-range-container">
+                            <input type="range" id="input-size" class="price__form-range range">
+                            <span class="price__form-span">7x3<sup>М.</sup></span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="button-submit price__form-button">Оставить заявку</button>
+
+                    <div class="price__form-shadow"></div>
+
+                    <div class="price__pic"></div>
+                </form>
+                
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="products__container">
+
+            <h2 class="prosucts__title">
+                Товары для бассейна
+            </h2>
+
+            <ul class="products__filter">
+                <div class="products__filter-item">Все</div>
+                <div class="products__filter-item">Насосы</div>
+                <div class="products__filter-item">Нагреватели</div>
+            </ul>
+
+            <div class="products__slider">
+                <ul class="products__slider-list">
+                    <div class="products__slider-item">
+                        <img src="./img/product-1.png" alt="Product" class="products__slider-item-img">
+                        <h3 class="products__slider-item-name">Фильтровальная установка Bestway</h3>
+                    </div>
+                    <div class="products__slider-item">
+                        <img src="./img/product-2.png" alt="Product" class="products__slider-item-img">
+                        <h3 class="products__slider-item-name">Прожектор под плитку с оправой из ABS-пластика</h3>
+                    </div>
+                    <div class="products__slider-item">
+                        <img src="./img/product-1.png" alt="Product" class="products__slider-item-img">
+                        <h3 class="products__slider-item-name">Фильтровальная установка Bestway</h3>
+                    </div>
+                    <div class="products__slider-item">
+                        <img src="./img/product-2.png" alt="Product" class="products__slider-item-img">
+                        <h3 class="products__slider-item-name">Прожектор под плитку с оправой из ABS-пластика</h3>
+                    </div>
+                </ul>
+                <div class="products__slider-buttons">
+                    <button class="products__slider-button button-slider button-slider_left"></button>
+                    <button class="products__slider-button button-slider button-slider_right"></button>
+                </div>
+            </div>
+
+            <button class="products__button button-submit">Смотреть все</button>
+
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="advantages__container">
+            <h2 class="advantages__title">
+                Что вы получаете?
+            </h2>
+            <ul class="advantages__list">
+                <li class="advantages__item">
+                    <div class="advantages__item-icon-1"></div>
+                    <h3 class="advantages__item-name">
+                        Индивидуальное<br>предложение
+                    </h3>
+                </li>
+                <li class="advantages__item">
+                    <div class="advantages__item-icon-2"></div>
+                    <h3 class="advantages__item-name">
+                        Комплексная<br>поддержка
+                    </h3>
+                </li>
+                <li class="advantages__item">
+                    <div class="advantages__item-icon-3"></div>
+                    <h3 class="advantages__item-name">
+                        Качественные<br>материалы
+                    </h3>
+                </li>
+            </ul>
+        </div>
+        <div class="advantages__leaves"></div>
+    </section>
+
+    <section class="questions">
+        <div class="questions__container">
+            <h2 class="questions__title">
+                Остались вопросы?
+            </h2>
+            <form action="submit" class="questions__form">
+                <p class="questions__form-paragraph">
+                    Оставьте заявку и наши специалисты свяжутся с вами в ближайшее время
+                </p>
+                <input type="text" class="questions__form-input input" placeholder="Имя">
+                <input type="tel" class="questions__form-input input" placeholder="Телефон">
+                <button type="submit" class="questions__form-button button-submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__card">
+                <h2 class="footer__card-title">
+                    Контакты
+                </h2>
+                <ul class="footer__card-list">
+                    <li class="footer__card-item footer__card-address">
+                        Казахстан, Алматы, Байзакова, 263, 1 этаж, 5 офис
+                    </li>
+                    <li class="footer__card-item footer__card-phones">
+                        +7 727 368 83 56, +7 771 964 36 50
+                    </li>
+                    <li class="footer__card-item footer__card-email">
+                        <span>imfo@pool.kz</span>                      
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,297 @@
+/* Common styles */
+body {
+	font-family: Gilroy, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+    line-height: 120%;
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+button, select, input, textarea {
+	font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+	font-weight: 400;
+    line-height: 120%;
+    color: var(--text);
+}
+
+/* Headings and text */
+h1 {
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 100%;
+	text-transform: uppercase;
+}
+h2 {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 100%;
+	text-transform: uppercase;
+}
+p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+}
+a {
+	font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+}
+strong {
+	font-weight: 700;
+}
+
+/* Buttons */
+.button-submit {
+    padding: 13px 23px 13px 26px;
+    border: 0;
+    border-radius: 8px;
+    background: linear-gradient(var(--button-from), var(--button-to));
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+.button-submit::after {
+    content: '';
+    width: 95%;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -4px;
+    border-radius: 50%;
+    background: linear-gradient(rgba(0,0,0,0) 10%, var(--button-to) 65%, var(--button-to) 100%);
+    z-index: 1;
+}
+.button-submit:hover {
+    transform: scale(1.02);
+}
+
+.button-slider {
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--grey-dark);
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+.button-slider_left::after {
+    content: '';
+    width: 8px;
+    height: 1px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: left top;
+    transform: translate(-50%) rotate(45deg);
+    background-color: var(--grey-dark);
+}
+.button-slider_left::before {
+    content: '';
+    width: 8px;
+    height: 1px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: left bottom;
+    transform: translate(-50%) rotate(-45deg);
+    background-color: var(--grey-dark);
+}
+.button-slider_right::after {
+    content: '';
+    width: 8px;
+    height: 1px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: right top;
+    transform: translate(-50%) rotate(45deg);
+    background-color: var(--grey-dark);  
+}
+.button-slider_right::before {
+    content: '';
+    width: 8px;
+    height: 1px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: right bottom;
+    transform: translate(-50%) rotate(-45deg);
+    background-color: var(--grey-dark);  
+}
+.button-slider:hover {
+    border-color: var(--blue);
+    background-color: var(--blue);
+}
+.button-slider:hover::after {
+    background-color: #fff;
+}
+.button-slider:hover::before {
+    background-color: #fff;
+}
+
+
+/* Inputs */
+.select {
+    margin: 0;
+    padding: 8px 16px;
+    padding-right: 56px;
+    border: 1px solid var(--grey-dark);
+    border-radius: 6px;
+    box-shadow: inset 12px 12px 12px -8px var(--input-shadow);
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+    -moz-appearance: none;
+    -webkit-appearance: none; 
+    appearance: none;
+}
+.select-wrapper {
+    display: inline-block;
+    position: relative;
+}
+.select-wrapper::before {
+    content: '';
+    width: 1px;
+    height: 8px;
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    transform-origin: left bottom;
+    transform: translateY(-50%) rotate(45deg);
+    background-color: var(--grey-dark);
+}
+.select-wrapper::after {
+    content: '';
+    width: 1px;
+    height: 8px;
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    transform-origin: right bottom;
+    transform: translateY(-50%) rotate(-45deg);
+    background-color: var(--grey-dark);
+}
+
+.range {
+    cursor: pointer;
+    -moz-appearance: none;
+    -webkit-appearance: none; 
+    appearance: none;
+}
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    margin-top: -10px;
+    width: 26px;
+    height: 26px;
+    border: 2px solid var(--slider-thumb);
+    border-radius: 50%;
+    background: linear-gradient(var(--slider-from), var(--slider-to));
+    box-shadow: 4px 4px 4px -2px var(--slider-thumb-shadow);
+}
+.range::-moz-range-thumb {
+    -moz-appearance: none;
+    width: 26px;
+    height: 26px;
+    border: 2px solid var(--slider-thumb);
+    border-radius: 50%;
+    background: linear-gradient(var(--slider-from), var(--slider-to));
+}
+.range::-ms-thumb {
+    -ms-appearance: none;
+    width: 26px;
+    height: 26px;
+    border: 2px solid var(--slider-thumb);
+    border-radius: 50%;
+    background: linear-gradient(var(--slider-from), var(--slider-to));
+}
+.range::-webkit-slider-runnable-track {
+    height: 6px;
+    border-radius: 3px;
+    background-color: var(--slider-track);
+    box-shadow: inset 2px 2px 2px var(--slider-track-shadow);
+}
+.range::-moz-range-track {
+    height: 6px;
+    border-radius: 3px;
+    background-color: var(--slider-track);
+    box-shadow: inset 2px 2px 2px var(--slider-track-shadow);
+}
+.range::-ms-track {
+    height: 6px;
+    border-radius: 3px;
+    background-color: var(--slider-track);
+    box-shadow: inset 2px 2px 2px var(--slider-track-shadow);
+}
+
+.input {
+    padding: 14px 23px;
+    border-radius: 8px;
+    border: 1px solid var(--grey-dark);
+    font-size: 18px;
+    box-shadow: inset 12px 12px 12px -8px var(--input-shadow);
+}
+.input::placeholder {
+    color: var(--text);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    h1, h2 {
+        font-size: 26px;
+    }
+    .button-submit {
+        padding: 10px 17px 10px 17px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .button-slider {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    h1, h2 {
+        font-size: 22px;
+    }
+    .button-submit {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .button-slider {
+        width: 40px;
+        height: 40px;
+    }
+    .select {
+        margin: 0;
+        padding: 4px 10px;
+        padding-right: 26px;
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .select-wrapper::before {
+        right: 18px;
+    }
+    .select-wrapper::after {
+        right: 18px;
+    }
+    .range::-webkit-slider-thumb,
+    .range::-moz-range-thumb,
+    .range::-ms-thumb  {
+        width: 13px;
+        height: 13px;
+    }
+    .input {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+}

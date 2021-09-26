@@ -1,0 +1,45 @@
+.works__container {
+    max-width: 1442px;
+    margin: 0 auto;
+}
+.works__title {
+    margin-top: 15px;
+    text-align: center;
+    padding-bottom: 26px;
+    background: url('../../img/wave-orange.png') no-repeat center bottom;
+}
+.works__slider {
+    width: 100%;
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 26px;
+}
+.works__slider-img {
+    width: 100%;
+}
+.works__buttons {
+    padding-top: 34px;
+    padding-bottom: 84px;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .works__container {
+        padding: 0 20px;
+    }
+    .works__slider-pic:first-child {
+        display: none;
+    }
+    .works__slider-pic:last-child {
+        display: none;
+    }
+    .works__buttons {
+        padding-top: 24px;
+        padding-bottom: 34px;
+    }
+}

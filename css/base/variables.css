@@ -1,0 +1,20 @@
+:root {
+    --text: rgb(22, 57, 80);
+
+    --button-from: rgb(246, 193, 122);
+    --button-to: rgb(237, 102, 26);
+
+    --slider-from: rgb(250, 250, 250);
+    --slider-to: rgb(230, 230, 230);
+    --slider-thumb: rgb(244, 178, 109);
+    --slider-thumb-shadow: rgb(191, 191, 191);
+    --slider-track: rgb(237, 237, 237);
+    --slider-track-shadow: rgb(211, 211, 211);
+
+    --input-shadow: rgb(236, 236, 236);
+
+    --blue: rgb(39, 193, 222);
+    --orange: rgb(238, 111, 37);
+    --grey: rgb(242, 242, 242);
+    --grey-dark: rgb(184, 184, 184);
+}

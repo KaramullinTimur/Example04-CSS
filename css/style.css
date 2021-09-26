@@ -1,0 +1,14 @@
+/* Base */
+@import "base/reset.css";
+@import "base/fonts.css";
+@import "base/variables.css";
+@import "base/common.css";
+
+/* Sections */
+@import "sections/header.css";
+@import "sections/works.css";
+@import "sections/price.css";
+@import "sections/products.css";
+@import "sections/advantages.css";
+@import "sections/questions.css";
+@import "sections/footer.css";
